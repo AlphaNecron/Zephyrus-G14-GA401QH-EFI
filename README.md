@@ -3,15 +3,16 @@
 OpenCore version: v0.9.2  
 MacOS version: 11.7.7
 
+### Screenshot
 ![image](https://github.com/AlphaNecron/Zephyrus-G14-GA401QH-EFI/assets/57827456/b9ec2bc9-e8a7-4fac-bb26-197d48a60117)
 
-### Specifications
+### Hardware specification
 | Component | Model |
 | --- | --- |
 | CPU | AMD Ryzen 7 5800HS |
 | iGPU | Radeon Vega 8 |
-| Audio Codec | Realtek ALC285 |
-| Wifi | Mediatek MT7921 (needs replacement) |
+| Audio codec | Realtek ALC285 (layout 11) |
+| Wifi | Mediatek MT7921 (requires replacement) |
 | SSD | Intel 670p |
 
 #### Working
@@ -21,9 +22,9 @@ MacOS version: 11.7.7
 - iGPU
 
 #### Not working
-- Wifi / Bluetooth
-- AirDrop - Requires compatible WLAN/Bluetooth card
-- Internal microphone - AMD desktop is affected as well
+- Wifi / Bluetooth - Requires compatible cards like Intel (non-native) and BCM.
+- Internal microphone - AMD desktop is affected as well.
+- Fn keys - requires SSDT patching.
 - DRM - Waiting for fixes from `NootedRed`
 - dGPU - 1650 is not supported btw.
 
