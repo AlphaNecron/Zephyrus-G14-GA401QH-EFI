@@ -10,6 +10,7 @@ MacOS version: 11.7.7
 | Component | Model |
 | --- | --- |
 | CPU | AMD Ryzen 7 5800HS |
+| RAM | 24GB DDR4 SODIMM |
 | iGPU | Radeon Vega 8 |
 | Audio codec | Realtek ALC285 (layout 11) |
 | Wifi | Mediatek MT7921 (requires replacement) |
@@ -31,3 +32,4 @@ MacOS version: 11.7.7
 ### Notes
 - Remember to use GenSMBIOS and change MASKED properties in `config.plist`.
 - Only supports Big Sur, Monterey requires patches.
+- Use [`UMAF`](https://github.com/DavidS95/Smokeless_UMAF) to enable `Above 4G decoding` and increase VRAM to at least 1GB (2GB is recommended)
